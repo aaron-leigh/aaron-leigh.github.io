@@ -3257,14 +3257,15 @@ blockquote {
 }
 
 .social-link-wrapper {
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
   margin-top: 4em;
   display: flex;
 }
 
 .link-social {
-  margin-right: 25px;
+  justify-content: flex-end;
+  margin-left: 15px;
   display: flex;
 }
 
@@ -7420,6 +7421,10 @@ blockquote {
     padding-right: 1em;
   }
 
+  .container.is-case-study {
+    padding-top: 2em;
+  }
+
   .container.is-footer {
     height: auto;
     padding-top: 0;
@@ -7433,6 +7438,7 @@ blockquote {
 
   .section.home-hero-top.mob {
     height: 100vh;
+    padding-top: 25%;
   }
 
   .section.is-about {
@@ -7441,7 +7447,11 @@ blockquote {
   }
 
   .section.is-footer.ft.is-white {
-    height: 35vh;
+    height: 37vh;
+  }
+
+  .paragraph.large {
+    margin-bottom: 2em;
   }
 
   .nav-wrapper {
@@ -7478,6 +7488,10 @@ blockquote {
 
   .cs-section-wrapper.bottom-margin {
     margin-bottom: 8em;
+  }
+
+  .cs-header-wrapper {
+    margin-bottom: 0;
   }
 
   .cs-2-column-grid {
@@ -7527,10 +7541,6 @@ blockquote {
   .div-is-50.left-margin {
     width: 100%;
     margin-left: 0;
-  }
-
-  .div-is-50.breaks-to-100 {
-    height: 70vh;
   }
 
   .div-is-50.cs-div-right {
@@ -7598,6 +7608,10 @@ blockquote {
     margin-bottom: 50px;
   }
 
+  .phase-wrapper-100 {
+    margin-bottom: 0;
+  }
+
   .phase-list {
     margin-bottom: 0;
   }
@@ -7624,6 +7638,11 @@ blockquote {
 
   .project-wrapper {
     flex-direction: column;
+  }
+
+  .project-title {
+    margin-top: 0;
+    padding-right: 0;
   }
 
   .arrow-right-black {
@@ -7663,6 +7682,12 @@ blockquote {
     margin-top: 2em;
   }
 
+  .grid-4-column {
+    flex-flow: row;
+    width: 100%;
+    margin-left: 0%;
+  }
+
   .archive-hero {
     padding-top: 100px;
   }
@@ -7700,7 +7725,9 @@ blockquote {
   }
 
   .cs-h2 {
+    width: 100%;
     margin-bottom: 1em;
+    margin-left: 0;
   }
 
   .cs-section-title {
@@ -7756,6 +7783,7 @@ blockquote {
   }
 
   .inner-container {
+    height: 3.6em;
     padding-left: 1em;
   }
 
@@ -8066,6 +8094,10 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .grid-about-1-column {
+    margin-bottom: 4em;
+  }
+
   .div-is-100 {
     width: 100%;
     margin-bottom: 1em;
@@ -8092,6 +8124,10 @@ blockquote {
   .div-is-100.cs-div-right {
     margin-top: 1em;
   }
+
+  .div-block-15, .div-block-16, .div-block-17, .div-block-18, .div-block-19, .div-block-20 {
+    width: 50%;
+  }
 }
 
 #w-node-_4eabe20d-feab-2825-b63d-b58839533a4b-ff7d46aa, #w-node-_4eabe20d-feab-2825-b63d-b58839533a4c-ff7d46aa {
@@ -8108,10 +8144,6 @@ blockquote {
 
 #w-node-_12270a30-4e63-f9ba-f232-c1739e89ffcf-ff7d46aa {
   place-self: stretch stretch;
-}
-
-#w-node-_87ec4c70-7d05-4057-db0b-140f5e8b545e-ff7d46b3, #w-node-f1b2e1b0-4e90-2ed6-2993-88dbc83fed27-ff7d46b3, #w-node-_0c12df80-04f7-5593-a563-00e861b63281-ff7d46b3 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @media screen and (max-width: 991px) {
