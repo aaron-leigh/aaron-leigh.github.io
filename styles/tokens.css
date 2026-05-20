@@ -1,0 +1,128 @@
+/* ============================================================
+   DESIGN TOKENS
+   Source of truth for the design system.
+   Change a value here, it cascades everywhere.
+   ============================================================ */
+
+:root {
+  /* ---------- Color: Canvas (page backgrounds) ---------- */
+  --canvas:        #FAFAFA;   /* primary page background — 98% brightness grey */
+  --canvas-soft:   #FCFCFC;   /* lifted sections / inset surfaces */
+  --canvas-deep:   #EDEDED;   /* dividing bands */
+
+  /* ---------- Color: Surface (cards, panels) ---------- */
+  --surface:       #FFFFFF;
+  --surface-soft:  #FCFCFC;
+  --surface-tint:  #FAFAFA;
+
+  /* ---------- Color: Ink (text) ---------- */
+  --ink:           #16181C;   /* primary text — near-black, neutral */
+  --ink-2:         #4A4E55;   /* secondary text */
+  --ink-3:         #7C8087;   /* tertiary / muted */
+  --ink-4:         #A8ACB2;   /* placeholder / micro-labels */
+
+  /* ---------- Color: Accent (brand) ---------- */
+  --accent:        #5C6069;   /* primary brand — mid grey */
+  --accent-deep:   #2A2D32;   /* deep grey — footer / dark CTAs */
+  --accent-soft:   #7B7F87;   /* hover / lifted */
+
+  /* ---------- Color: Border ---------- */
+  --line:          #D8DADE;   /* default hairline */
+  --line-soft:     #E5E6EA;   /* subtler hairline on canvas */
+  --line-strong:   #BDC0C5;   /* emphasized */
+
+  /* ---------- Color: Tag / Category pastels ---------- */
+  --tag-rose-bg:    #FBE2E0;  --tag-rose-ink:    #8C3A36;
+  --tag-blue-bg:    #DCE6F4;  --tag-blue-ink:    #2F4D85;
+  --tag-mint-bg:    #D7EAD8;  --tag-mint-ink:    #2D5A37;
+  --tag-sand-bg:    #F1E6C6;  --tag-sand-ink:    #6E5A1F;
+  --tag-lilac-bg:   #E5DEF0;  --tag-lilac-ink:   #4A3973;
+  --tag-peach-bg:   #FADFC9;  --tag-peach-ink:   #864823;
+
+  /* ---------- Typography: Families ---------- */
+  --font-sans:    "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif:   "Averia Serif Libre", "Iowan Old Style", "Apple Garamond", Georgia, serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---------- Typography: Scale ---------- */
+  --fs-micro:     0.6875rem;  /* 11px — eyebrow labels */
+  --fs-xs:        0.75rem;    /* 12px */
+  --fs-sm:        0.875rem;   /* 14px */
+  --fs-base:      1rem;       /* 16px */
+  --fs-lg:        1.125rem;   /* 18px */
+  --fs-xl:        1.25rem;    /* 20px */
+  --fs-2xl:       1.5rem;     /* 24px */
+  --fs-3xl:       1.875rem;   /* 30px */
+  --fs-4xl:       2.25rem;    /* 36px */
+  --fs-5xl:       3rem;       /* 48px */
+  --fs-6xl:       3.75rem;    /* 60px */
+  --fs-display:   4.5rem;     /* 72px — hero */
+
+  /* ---------- Typography: Tracking & leading ---------- */
+  --tracking-tight:   -0.022em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.04em;
+  --tracking-eyebrow:  0.16em;
+
+  --leading-tight:    1.08;
+  --leading-snug:     1.18;
+  --leading-normal:   1.45;
+  --leading-relaxed:  1.6;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --s-1:   0.25rem;   /* 4 */
+  --s-2:   0.5rem;    /* 8 */
+  --s-3:   0.75rem;   /* 12 */
+  --s-4:   1rem;      /* 16 */
+  --s-5:   1.25rem;   /* 20 */
+  --s-6:   1.5rem;    /* 24 */
+  --s-8:   2rem;      /* 32 */
+  --s-10:  2.5rem;    /* 40 */
+  --s-12:  3rem;      /* 48 */
+  --s-16:  4rem;      /* 64 */
+  --s-20:  5rem;      /* 80 */
+  --s-24:  6rem;      /* 96 */
+  --s-32:  8rem;      /* 128 */
+  --s-40:  10rem;     /* 160 */
+
+  /* ---------- Radius ---------- */
+  --r-xs:    4px;
+  --r-sm:    6px;
+  --r-md:    10px;
+  --r-lg:    16px;
+  --r-xl:    22px;
+  --r-2xl:   28px;
+  --r-3xl:   36px;
+  --r-pill:  9999px;
+
+  /* ---------- Shadows (color-tinted, layered) ---------- */
+  --shadow-xs:
+    0 1px 1px rgba(22, 24, 28, 0.04),
+    0 1px 2px rgba(22, 24, 28, 0.04);
+  --shadow-sm:
+    0 1px 2px rgba(22, 24, 28, 0.05),
+    0 4px 12px rgba(22, 24, 28, 0.05);
+  --shadow-md:
+    0 2px 4px rgba(22, 24, 28, 0.06),
+    0 12px 28px rgba(22, 24, 28, 0.07);
+  --shadow-lg:
+    0 4px 8px rgba(22, 24, 28, 0.08),
+    0 24px 56px rgba(22, 24, 28, 0.10);
+  --shadow-inset-soft:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(22, 24, 28, 0.04);
+
+  /* ---------- Motion ---------- */
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:      cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-fast:      150ms;
+  --dur-base:      240ms;
+  --dur-slow:      420ms;
+
+  /* ---------- Layout ---------- */
+  --container:        76rem;   /* 1216px — outer max */
+  --container-narrow: 56rem;   /* 896px — long-form content */
+  --container-wide:   86rem;   /* 1376px — full bleed-ish */
+}
