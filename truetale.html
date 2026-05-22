@@ -164,12 +164,20 @@
           <p><strong>Understanding the author</strong> To seamlessly fit into authors' existing workflows, structured user surveys focussed on auditing their pain points and existing tool stacks.</p>
           <p><strong>Understanding the industry</strong> Attending industry events and meetups to interview a range of potential users sharpened my sense of the user persona best served by the product.</p>
           <p>Self-published indie authors working in complex genres, and publishing at high cadences, were identified as our Ideal Customer Profile.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Industry_Event_V1.webp" alt="Audience seated at round tables in a wood-panelled conference hall during the Indie Author Lab 'Writing, Publishing, Life: Challenges & Solutions' panel" />
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
           <p><strong>Understanding the technology</strong> I collaborated closely with engineering to refine the technical architecture, such as developing test cases for NLP, RAG and agentic systems.</p>
           <p>These gathered metrics on quality, cost and latency, all of which were key concerns for our users.</p>
           <p>Technical constraints also influenced UX — for example, my decision to pivot from real-time to triggered analysis of the text was necessary to reduce compute waste by 98%, while shaping which user flows were feasible.</p>
         </div>
         <figure class="c-figure">
-          <img src="Assets/Industry_Event_V1.webp" alt="Audience seated at round tables in a wood-panelled conference hall during the Indie Author Lab 'Writing, Publishing, Life: Challenges & Solutions' panel" />
+          <img src="Assets/Tech_Metrics_V1.webp" alt="A Metrics Trends dashboard with per-job charts for latency, LLM API cost, tokens processed and LLM calls across 71 jobs" />
         </figure>
       </div>
     </div>
@@ -218,12 +226,20 @@
         <div class="c-prose__body">
           <p><strong>Cards list</strong> An initial direction explored presenting information in a list of cards within a pop-up modal.</p>
           <p>However, this relatively unstructured information architecture scaled poorly with larger quantities of information, and lacked insight into the structure of the narrative.</p>
+        </div>
+        <figure class="c-figure c-figure--portrait">
+          <img src="Assets/Cards_List_V1.webp" alt="Character detail panel for Sarah Chen showing attribute cards for eyes, hair, family, age, height, occupation and personality, with a list of connected story elements below" />
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
           <p><strong>Map visualisation</strong> User surveys had surfaced requests for more of a visual 'map', a known pattern for plotting narratives.</p>
           <p>Through experimentation with different approaches and feedback from test users who highlighted an overwhelming amount of information, I increasingly pushed against representing every granular detail the technical architecture was able to extract.</p>
           <p>Instead, I focussed on filtering and organising only the most relevant information to a user.</p>
         </div>
-        <figure class="c-figure c-figure--portrait">
-          <img src="Assets/Cards_List_V1.webp" alt="Character detail panel for Sarah Chen showing attribute cards for eyes, hair, family, age, height, occupation and personality, with a list of connected story elements below" />
+        <figure class="c-figure">
+          <img src="Assets/Initial_Map_V1.webp" alt="A graph-database visualisation of a story version, with a central node linked to extracted entities, story facts, and flagged consistency issues such as conflicting durations and a paradox" />
         </figure>
       </div>
     </div>
@@ -239,23 +255,40 @@
         <h2 class="c-prose__heading mt-4">Refining UX/UI</h2>
       </header>
 
-      <div class="c-section-split c-section-split--reverse">
+      <div class="c-section-split">
         <div class="c-prose__body">
           <p><strong>Wireframing</strong> I opted to partially draw from Shadcn design system components for speed of development and ease of maintenance compared to a completely novel design system.</p>
           <p>Initial development focussed on the information architecture of the details of individual entities from the narrative, making these self-contained rather than cluttering the map.</p>
           <p>I then fleshed out how these cards would be embedded into the wider user flow of searching and navigating through the narrative.</p>
         </div>
         <figure class="c-figure">
-          <img src="Assets/Story_Map_Wireframe_V1.webp" alt="Wireframe of TrueTale's Story Map showing Mira Ashvale's relationship graph with a chapter selection slider, alongside a Story Bible side panel of character attributes" />
+          <div class="c-figure__track" data-autoplay="4000">
+            <img src="Assets/Story_Map_Wireframe_V2_Frame_1.webp" width="1512" height="982" alt="Wireframe of TrueTale's Story Bible side panel, with a search for 'Mira' returning Mira Ashvale and her attribute sections collapsed" />
+            <img src="Assets/Story_Map_Wireframe_V2_Frame_2.webp" width="1512" height="982" alt="Wireframe of TrueTale's Story Map showing Mira Ashvale's relationship graph with a chapter selection slider, alongside the Story Bible panel with her attributes expanded" />
+            <img src="Assets/Story_Map_Wireframe_V2_Frame_3.webp" width="1512" height="982" alt="Wireframe of TrueTale's Story Map zoomed into Mira Ashvale's connections, with the side panel showing the 'Mira Ashvale ↔ Moonbell Tea' connection detail" />
+          </div>
         </figure>
       </div>
 
-      <div class="c-section-split c-section-split--reverse mt-12">
+      <div class="c-section-split mt-12">
         <div class="c-prose__body">
           <p>The non-deterministic nature of AI-native technology meant we couldn't be completely certain our extraction would always be 100% accurate. I designed a flow to allow users to remove hallucinated entries and merge duplicates.</p>
         </div>
-        <figure class="c-figure c-figure--portrait">
-          <img src="Assets/Story_Bible_Correction_V1.webp" alt="Story Bible edit mode for character Kael, showing trait chips with dismiss controls and a 'Dismissed' group from which entries can be restored" />
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000" data-autoplay-offset="0.5">
+            <div class="c-figure__slide">
+              <img src="Assets/Story_Bible_Correction_V2_Frame_1.webp" width="718" height="296" alt="The Kael character card with its options menu open, showing Edit, Merge with… and Dismiss actions" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Story_Bible_Correction_V2_Frame_2.webp" width="814" height="1638" alt="Story Bible edit mode for Kael, with a hallucinated 'Slop' trait chip added to the Wears group ready to be dismissed" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Story_Bible_Correction_V2_Frame_3.webp" width="814" height="1638" alt="Story Bible edit mode for Kael after dismissing 'Slop', which now sits in a 'Dismissed' group from which it can be restored" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Story_Bible_Correction_V2_Frame_4.webp" width="814" height="1524" alt="The corrected Kael character card in read-only view, with the hallucinated trait removed from the visible attributes" />
+            </div>
+          </div>
         </figure>
       </div>
     </div>
@@ -383,6 +416,86 @@
   </footer>
 
   <script>
+    // Alternate the orientation of type/image split sections.
+    // Each section that contains c-section-split blocks flips relative to
+    // the previous such section; sections without splits (e.g. card grids)
+    // are skipped, so the alternation always tracks the type/image pairs
+    // no matter what sits between them. Stacked splits within one section
+    // share a single orientation.
+    (function () {
+      let splitSectionIndex = 0;
+      document.querySelectorAll('section').forEach(section => {
+        const splits = section.querySelectorAll('.c-section-split');
+        if (!splits.length) return;
+        const reverse = splitSectionIndex % 2 === 1;
+        splits.forEach(split => split.classList.toggle('c-section-split--reverse', reverse));
+        splitSectionIndex++;
+      });
+    })();
+
+    // Auto-advancing slide tracks: cycle full-width frames at the interval
+    // (ms) given by data-autoplay. Advances are aligned to wall-clock time,
+    // so a data-autoplay-offset (a fraction of the interval) keeps a track
+    // permanently phase-shifted from the un-offset tracks — e.g. offset
+    // "0.5" flips exactly halfway between their flips, and the two stay in
+    // step even after a hover pause. A row of dot controls is generated
+    // below each figure: it marks the current frame and jumps to any frame
+    // on click. Pauses on hover and skips autoplay entirely when the user
+    // prefers reduced motion.
+    document.querySelectorAll('.c-figure__track[data-autoplay]').forEach(track => {
+      const count = track.children.length;
+      if (count < 2) return;
+      const interval = parseInt(track.dataset.autoplay, 10) || 3000;
+      const offset = (parseFloat(track.dataset.autoplayOffset) || 0) * interval;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const figure = track.closest('.c-figure');
+      if (!figure) return;
+      let index = 0;
+      let timer = null;
+
+      // Build the dot controls, then wrap the figure and dots in a group
+      // so the pair occupies a single column of the section grid.
+      const nav = document.createElement('div');
+      nav.className = 'c-figure-nav';
+      nav.setAttribute('role', 'group');
+      nav.setAttribute('aria-label', 'Slideshow frames');
+      const dots = [];
+      for (let i = 0; i < count; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'c-figure-nav__dot';
+        dot.setAttribute('aria-label', 'Show frame ' + (i + 1) + ' of ' + count);
+        dot.addEventListener('click', () => { index = i; render(); stop(); start(); });
+        dots.push(dot);
+        nav.appendChild(dot);
+      }
+      const group = document.createElement('div');
+      group.className = 'c-figure-group';
+      figure.replaceWith(group);
+      group.append(figure, nav);
+
+      const render = () => {
+        track.style.transform = 'translateX(' + (-index * 100) + '%)';
+        dots.forEach((dot, i) => {
+          const on = i === index;
+          dot.classList.toggle('is-active', on);
+          dot.setAttribute('aria-current', on ? 'true' : 'false');
+        });
+      };
+      const advance = () => { index = (index + 1) % count; render(); };
+      // ms until the next interval boundary on this track's offset grid.
+      const nextTick = () => interval - (((Date.now() - offset) % interval) + interval) % interval;
+      const tick = () => { advance(); timer = setTimeout(tick, nextTick()); };
+      const start = () => { if (!timer && !reduced.matches) timer = setTimeout(tick, nextTick()); };
+      const stop = () => { clearTimeout(timer); timer = null; };
+
+      group.addEventListener('mouseenter', stop);
+      group.addEventListener('mouseleave', start);
+      reduced.addEventListener('change', () => { stop(); start(); });
+      render();
+      start();
+    });
+
     document.querySelectorAll('.c-figure__video').forEach(wrap => {
       const iframe = wrap.querySelector('iframe[src*="vimeo.com"]');
       if (!iframe) return;
