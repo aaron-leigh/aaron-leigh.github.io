@@ -444,7 +444,7 @@
     radial-gradient(circle at 82% 88%, rgba(92, 96, 105, 0.55) 0%, transparent 50%),
     linear-gradient(180deg, var(--accent-soft) 0%, var(--accent) 100%);
   color: #E8EAEE;
-  border-radius: var(--r-3xl) var(--r-3xl) 0 0;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
   position: relative;
   overflow: hidden;
   padding: clamp(var(--s-10), 5vw, var(--s-16)) var(--s-6);
@@ -510,6 +510,16 @@
   font-style: italic;
   font-weight: 400;
   color: var(--accent);
+}
+/* Long-title variant: reduces the cap so multi-word titles fit two lines
+   inside the container without forcing short titles to shrink. */
+.c-case-hero__title--long {
+  font-size: clamp(3rem, 9vw, 6.5rem);
+}
+.c-case-hero__caption {
+  margin-top: calc(var(--s-8) * -1 + var(--s-3));
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
 }
 
 .c-screens {
@@ -686,7 +696,7 @@
 }
 .c-figure__caption {
   padding: var(--s-3) var(--s-5);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   color: var(--ink-3);
   border-top: 1px solid var(--line-soft);
   background: var(--surface);
@@ -835,6 +845,27 @@
   font-size: var(--fs-lg);
   letter-spacing: var(--tracking-tight);
   margin-bottom: var(--s-2);
+}
+
+/* Aside variant — quieter surface, smaller italic body, muted icon.
+   Reads as a side-note rather than a primary callout. */
+.c-callout--note {
+  background: var(--surface-tint);
+  border-style: dashed;
+  box-shadow: none;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--s-4);
+  align-self: start;
+}
+.c-callout--note .c-callout__icon {
+  color: var(--ink-3);
+  flex: 0 0 auto;
+}
+.c-callout--note p {
+  font-size: var(--fs-sm);
+  font-style: italic;
+  color: var(--ink-3);
 }
 
 /* ---- Device strip (3-up mobile previews) ---- */
