@@ -41,7 +41,7 @@
 
   /* ---------- Typography: Families ---------- */
   --font-sans:    "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-serif:   "Averia Serif Libre", "Iowan Old Style", "Apple Garamond", Georgia, serif;
+  --font-serif:   "Castoro", "Iowan Old Style", "Apple Garamond", Georgia, serif;
   --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   /* ---------- Typography: Scale ---------- */
@@ -59,7 +59,7 @@
   --fs-display:   4.5rem;     /* 72px — hero */
 
   /* ---------- Typography: Tracking & leading ---------- */
-  --tracking-tight:   -0.022em;
+  --tracking-tight:   0;
   --tracking-normal:   0;
   --tracking-wide:     0.04em;
   --tracking-eyebrow:  0.16em;

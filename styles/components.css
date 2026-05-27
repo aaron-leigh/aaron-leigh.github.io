@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--s-4);
+  gap: var(--s-3);
 }
 
 .c-nav__pill {
@@ -44,6 +44,7 @@
   padding: var(--s-2) var(--s-2) var(--s-2) var(--s-4);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--line-soft);
+  white-space: nowrap;
 }
 
 .c-nav__brand {
@@ -51,9 +52,10 @@
   align-items: center;
   padding: var(--s-2) var(--s-2);
   font-weight: 500;
-  font-size: var(--fs-2xl);
+  font-size: clamp(1rem, 3.6vw, var(--fs-2xl));
   letter-spacing: var(--tracking-tight);
   color: var(--ink);
+  white-space: nowrap;
   transition: color var(--dur-fast) var(--ease-out);
 }
 .c-nav__brand:hover { color: var(--ink-2); }
@@ -88,8 +90,9 @@
   color: var(--surface);
   padding: var(--s-2) var(--s-4);
   border-radius: var(--r-pill);
-  font-size: var(--fs-sm);
+  font-size: clamp(0.75rem, 2.6vw, var(--fs-sm));
   font-weight: 500;
+  white-space: nowrap;
   transition: transform var(--dur-fast) var(--ease-spring),
               background var(--dur-fast) var(--ease-out);
 }
@@ -243,7 +246,7 @@
   font-style: italic;
   font-weight: 400;
   color: var(--accent);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .c-lede {
@@ -419,6 +422,7 @@
   display: grid; place-items: center;
   font-family: var(--font-serif);
   font-style: italic;
+  font-weight: 400;
   font-size: var(--fs-sm);
   border: 1px solid var(--line-soft);
 }
@@ -499,7 +503,7 @@
   font-size: clamp(4rem, 13vw, 9rem);
   font-weight: 500;
   line-height: 0.95;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   text-wrap: balance;
   max-width: 22ch;
   margin-inline: auto;
@@ -622,6 +626,7 @@
   border: 1px solid var(--line-soft);
   border-radius: var(--r-xl);
   box-shadow: var(--shadow-xs);
+  align-items: start;
 }
 @media (min-width: 700px) { .c-meta-strip { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) {
@@ -788,6 +793,7 @@
 .c-theme__num {
   font-family: var(--font-serif);
   font-style: italic;
+  font-weight: 400;
   font-size: var(--fs-xl);
   color: var(--accent);
   margin-bottom: var(--s-3);
