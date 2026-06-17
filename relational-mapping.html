@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aaron Leigh · Relational Mapping</title>
+  <meta name="description" content="Relational Mapping — an immersive web-based experience of Glasgow's rich history. Personal project case study." />
+
+  <link rel="icon" type="image/png" href="Assets/All/Favicon_V1.png" />
+  <link rel="apple-touch-icon" href="Assets/All/Favicon_V1.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Castoro:ital@0;1&display=swap"
+  />
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+
+  <!-- NAV (shared) -->
+  <header class="c-nav">
+    <div class="c-nav__inner">
+      <a href="index.html" class="c-nav__brand" aria-label="Aaron Leigh — home">
+        Aaron Leigh
+      </a>
+      <nav class="c-nav__pill" aria-label="Primary">
+        <ul class="c-nav__menu">
+          <li><a class="c-nav__link" href="index.html#work">Work</a></li>
+          <li hidden><a class="c-nav__link" href="index.html#about">About</a></li>
+          <li hidden><a class="c-nav__link" href="index.html#testimonials">Testimonials</a></li>
+        </ul>
+        <a class="c-nav__cta" href="mailto:aaronleighdesign@gmail.com">
+          Get in touch
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       CASE HERO — title only (image lives in §01 Overview)
+       ====================================================== -->
+  <section class="c-case-hero">
+    <div class="container">
+      <div class="c-case-hero__eyebrow reveal reveal-1">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> Case study</span>
+      </div>
+      <h1 class="c-case-hero__title reveal reveal-2">
+        <em>Relational Mapping</em>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §01 — OVERVIEW
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 01</span>
+        <h2 class="c-prose__heading mt-4">Overview</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p>Relational Mapping is an immersive web-based experience which highlights Glasgow's rich history in the form of an interactive, 3D digital environment.</p>
+          <p>My role was end-to-end designer, taking the project from research through to a live, publicly accessible website.</p>
+          <p>The outcome was an experimental interactive presented at exhibition to an estimated 25,000 in-person visitors.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Relational_Mapping/Hero_Image_V1.webp" alt="Relational Mapping — immersive 3D web experience of Glasgow's history" />
+        </figure>
+      </div>
+
+      <div class="c-meta-strip">
+        <div class="c-meta__row">
+          <span class="c-meta__label">Role</span>
+          <span class="c-meta__value">End-to-End Designer</span>
+        </div>
+        <div class="c-meta__row">
+          <span class="c-meta__label">Responsibilities</span>
+          <span class="c-meta__value">UX Design, UI Design, Web Development, Research</span>
+        </div>
+        <div class="c-meta__row">
+          <span class="c-meta__label">Collaborators</span>
+          <span class="c-meta__value">Personal Project</span>
+        </div>
+        <div class="c-meta__row">
+          <span class="c-meta__label">Goals</span>
+          <span class="c-meta__value">1. Draw awareness to Glasgow's rich history through an interactive experience<br />2. Get to grips with emerging web technologies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §02 — THE CHALLENGE
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 02</span>
+        <h2 class="c-prose__heading mt-4">The Challenge</h2>
+      </header>
+
+      <div class="c-prose__body">
+        <p>A common point of contention in my home city of Glasgow is the tension between built heritage and new redevelopments, which often overlook the social or historical importance of a given site.</p>
+      </div>
+
+      <div class="c-callout-grid mt-8" style="max-width: 60ch;">
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 11l11-5v12L4 13v-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 13v4a2 2 0 0 0 4 0v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 9v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p><strong>Highlighting issues</strong> Given that building plans are sometimes subject to public consultation, I developed an immersive resource for Glasgow residents to reconsider and engage with the significance of the city space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §03 — CONSTRAINTS
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 03</span>
+        <h2 class="c-prose__heading mt-4">Constraints</h2>
+      </header>
+
+      <div class="c-callout-grid c-callout-grid--2">
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p><strong>Developing from scratch</strong> The interactive had to be prototyped and delivered completely solo, without prior development experience. At this point in time, agentic coding had not yet become commercially available.</p>
+        </div>
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p><strong>Accessible platform</strong> I aimed to develop an experience that would run on all modern browsers, to avoid users experiencing the friction of downloading a standalone app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §04 — INITIAL RESEARCH
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 04</span>
+        <h2 class="c-prose__heading mt-4">Initial Research</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p><strong>Contextual research</strong> The tension between heritage and redevelopment is evident in local news reporting and political debates.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Relational_Mapping/News_Report_V1.webp" alt="Local news report illustrating the tension between heritage and redevelopment in Glasgow" />
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>Primary research</strong> Primary research highlighted the fact that particular materials are key symbols of Glasgow's history.</p>
+          <p>Given this significance, key materials became the focus for the website's information architecture.</p>
+        </div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Glasgow_Derive_V1.webp" alt="Map of Glasgow annotated with a dérive route tracing key material sites across the city" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Derive_Shots_V1.webp" alt="Photographs taken along the Glasgow dérive, documenting materials that recur as symbols of the city's history" />
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>Researching interaction patterns</strong> I first explored some of the interaction patterns users would be familiar with from other mapping applications, to make movement around the space intuitive.</p>
+        </div>
+        <figure class="c-figure c-figure--portrait">
+          <img src="Assets/Relational_Mapping/Interaction_Research_V1.gif" alt="Animated reference of existing mapping application interaction patterns, used as a basis for intuitive movement around the space" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §05 — FRAMING THE APPROACH
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 05</span>
+        <h2 class="c-prose__heading mt-4">Framing the Approach</h2>
+      </header>
+
+      <div class="c-callout-grid c-callout-grid--2">
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12c4-6 12-6 16 0-4 6-12 6-16 0z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          <p><strong>Principles for interaction</strong> The interactive was required to maintain immersion, for sustained engagement with the content.</p>
+        </div>
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p><strong>Scoping UX/UI</strong> The design solution needed to be technically lightweight enough to run on a browser, accessible to a diverse audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §06 — DESIGN DIRECTIONS
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 06</span>
+        <h2 class="c-prose__heading mt-4">Design Directions</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p><strong>Sketching architectures</strong> Based on research into existing mapping applications, I created initial indicative frames to explore potential approaches to displaying content.</p>
+        </div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Routes_Sketch_V1.webp" alt="Hand-drawn sketch exploring routes through the interactive 3D environment" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Layering_Sketch_V1.webp" alt="Hand-drawn sketch exploring how content layers stack within the interface" />
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §07 — PROTOTYPING INTERACTION
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 07</span>
+        <h2 class="c-prose__heading mt-4">Prototyping Interaction</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p><strong>Building in 3D</strong> To build the framework for the website and test initial approaches to interaction design, I developed prototypes with placeholder assets.</p>
+          <p>An initial build used 360° rotation around a single point as a setup to test experiences in 3D space.</p>
+        </div>
+        <figure class="c-figure">
+          <video src="Assets/Relational_Mapping/Prototype_1_V1.mp4" autoplay muted loop playsinline preload="auto" aria-label="Prototype footage of 3D assets being built and rendered in the browser" style="width: 100%; height: auto; display: block;"></video>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>User view snapping</strong> Further prototyping incorporated 'snapping' the user view to a new location, taking cues from Google Maps' Street View functionality. This prompted users to experience each material as a key focus which offers wider views on the city.</p>
+          <p>Given development took place before commercially available agentic coding, I relied on forums such as Stack Overflow to source code.</p>
+        </div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Flows_Sketch_V1.webp" alt="Sketch of the user-view snapping flow, showing how the camera transitions between material focus points" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Code_Snippet_Frame_1_V1.webp" alt="Code snippet of the project-cubes A-Frame component, defining the positions of each material focus point and wiring up the orbit camera" />
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p>Models were spaced evenly to avoid imposing any hierarchy on the user's movement.</p>
+        </div>
+        <figure class="c-figure">
+          <video src="Assets/Relational_Mapping/Prototype_2_V1.mp4" autoplay muted loop playsinline preload="auto" aria-label="Prototype footage of the user-view snapping between evenly spaced material focus points" style="width: 100%; height: auto; display: block;"></video>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>Image portals</strong> After issues arose with tracking the user's viewpoint across different programming languages, I incorporated a 'portal' feature, wrapping a 360° image around each camera view.</p>
+        </div>
+        <figure class="c-figure">
+          <video src="Assets/Relational_Mapping/Prototype_3_V1.mp4" autoplay muted loop playsinline preload="auto" aria-label="Prototype footage of the image portal feature, wrapping a 360° photograph around each camera view" style="width: 100%; height: auto; display: block;"></video>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>3D materials on the web</strong> Working website iterations up into higher fidelity required creating 3D assets compatible with web render engines, prototyping to identify the correct technical approach to displaying these components.</p>
+        </div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Node_System_Frame_1_V1.webp" alt="Blender shader node graph defining a material with paired noise, voronoi and wave textures driving two Principled BSDF outputs" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Node_System_Frame_2_V1.webp" alt="Blender shader node graph for a second material, layering noise and voronoi textures through colour ramps and bump nodes into a Principled BSDF output" />
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div aria-hidden="true"></div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="2000" data-autoplay-offset="0.5">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Material_Prototyping_Frame_1_V1.webp" alt="Material prototype render — base sphere with neutral shading, frame 1" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Material_Prototyping_Frame_2_V1.webp" alt="Material prototype render — iteration on shader fidelity, frame 2" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Material_Prototyping_Frame_3_V1.webp" alt="Material prototype render — iteration on shader fidelity, frame 3" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Material_Prototyping_Frame_4_V1.webp" alt="Material prototype render — iteration on shader fidelity, frame 4" />
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §08 — REFINING VISUALS
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 08</span>
+        <h2 class="c-prose__heading mt-4">Refining Visuals</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p><strong>Graphic language</strong> My final approach to visual content developed a design system based on Ordnance Survey mapping, a familiar mapping design language for users in the UK.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Relational_Mapping/Map_Legend_V1.webp" alt="Ordnance Survey-inspired map legend, establishing the iconographic design language used throughout the experience" />
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>Content visual design</strong> The design patterns of these maps prompted my approach to information architecture, while its iconographic style was expanded into a broader range of symbol components to represent highly specific contexts.</p>
+        </div>
+        <figure class="c-figure c-figure--slideshow">
+          <div class="c-figure__track" data-autoplay="4000">
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Layout_Development_Frame_1_V1.webp" alt="Layout development frame 1 — annotated map points for Camphill Earthworks, the first public urinal in Govan, and the closure of Clyde Iron Works" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Layout_Development_Frame_2_V1.webp" alt="Layout development frame 2 — refined map composition and content annotation pattern" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Layout_Development_Frame_3_V1.webp" alt="Layout development frame 3 — further iteration on map composition and content annotation pattern" />
+            </div>
+            <div class="c-figure__slide">
+              <img src="Assets/Relational_Mapping/Layout_Development_Frame_4_V1.webp" alt="Layout development frame 4 — final iteration on map composition and content annotation pattern" />
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §09 — USER TESTING
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 09</span>
+        <h2 class="c-prose__heading mt-4">User Testing</h2>
+      </header>
+
+      <div class="c-section-split">
+        <div class="c-prose__body">
+          <p><strong>Assessing legibility</strong> Iterations were tested in the website at regular intervals to assess their spherical projection within the 'image portals'.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Relational_Mapping/Portal_Testing_V1.webp" alt="Testing the spherical projection of map content within an image portal to assess legibility" />
+        </figure>
+      </div>
+
+      <div class="c-section-split mt-12">
+        <div class="c-prose__body">
+          <p><strong>Testing prototypes</strong> Throughout the design process, prototypes were tested with users to gain qualitative feedback, assessing comprehension of content and interaction intuition.</p>
+          <p>Shown here is a user interacting with a high-fidelity prototype presented at an exhibition.</p>
+        </div>
+        <figure class="c-figure">
+          <img src="Assets/Relational_Mapping/User_Testing_V1.webp" alt="A user interacting with a high-fidelity prototype of Relational Mapping at exhibition" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §10 — DELIVERY
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 10</span>
+        <h2 class="c-prose__heading mt-4">Delivery</h2>
+      </header>
+
+      <figure class="c-figure">
+        <div class="c-figure__video">
+          <iframe
+            src="https://player.vimeo.com/video/826738811?title=0&byline=0&portrait=0"
+            title="Relational Mapping — Delivery"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §11 — RESULTS
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 11</span>
+        <h2 class="c-prose__heading mt-4">Results</h2>
+      </header>
+
+      <div class="c-callout-grid c-callout-grid--2">
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p>Publicly accessible live website developed across multiple programming languages and packages (A-Frame, HTML, CSS, JavaScript, THREE.js, jQuery).</p>
+        </div>
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 20c2-4 6-6 9-6s7 2 9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          <p>Presented at exhibition estimated at ~25,000 in-person visitors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       §12 — LEARNINGS
+       ====================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <header class="mb-10">
+        <span class="c-eyebrow"><span class="c-eyebrow__dot"></span> 12</span>
+        <h2 class="c-prose__heading mt-4">Learnings</h2>
+      </header>
+
+      <div class="c-callout-grid c-callout-grid--2">
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="5" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 6.5l10 4.5M7 17.5l10-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p>Prototyping and user testing for experimental interaction models.</p>
+        </div>
+        <div class="c-callout">
+          <span class="c-callout__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-5 4 5 4M15 8l5 4-5 4M14 5l-4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>Web development with emerging immersive technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA (shared) -->
+  <footer id="contact" class="c-footer-cta grain">
+    <div class="c-footer-cta__inner">
+      <div>
+        <h2 class="c-footer-cta__title">Aaron Leigh</h2>
+        <p class="mt-3" style="max-width: 44ch; color: rgba(232, 234, 238, 0.75); line-height: var(--leading-relaxed);">
+          Currently open to product design roles.
+        </p>
+      </div>
+      <div class="c-footer-cta__meta">
+        <div class="flex gap-3" style="flex-wrap: wrap;">
+          <a class="c-btn c-btn--primary" href="mailto:aaronleighdesign@gmail.com">
+            aaronleighdesign@gmail.com
+            <span class="c-btn__arrow" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+        <div class="mt-3" style="font-size: var(--fs-xs); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; opacity: 0.55;">
+          © 2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Alternate the orientation of type/image split sections.
+    (function () {
+      let splitSectionIndex = 0;
+      document.querySelectorAll('section').forEach(section => {
+        const splits = section.querySelectorAll('.c-section-split');
+        if (!splits.length) return;
+        const reverse = splitSectionIndex % 2 === 1;
+        splits.forEach(split => split.classList.toggle('c-section-split--reverse', reverse));
+        splitSectionIndex++;
+      });
+    })();
+
+    document.querySelectorAll('.c-figure__track[data-autoplay]').forEach(track => {
+      const count = track.children.length;
+      if (count < 2) return;
+      const interval = parseInt(track.dataset.autoplay, 10) || 3000;
+      const offset = (parseFloat(track.dataset.autoplayOffset) || 0) * interval;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const figure = track.closest('.c-figure');
+      if (!figure) return;
+      let index = 0;
+      let timer = null;
+
+      const nav = document.createElement('div');
+      nav.className = 'c-figure-nav';
+      nav.setAttribute('role', 'group');
+      nav.setAttribute('aria-label', 'Slideshow frames');
+      const dots = [];
+      for (let i = 0; i < count; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'c-figure-nav__dot';
+        dot.setAttribute('aria-label', 'Show frame ' + (i + 1) + ' of ' + count);
+        dot.addEventListener('click', () => { index = i; render(); stop(); start(); });
+        dots.push(dot);
+        nav.appendChild(dot);
+      }
+      const group = document.createElement('div');
+      group.className = 'c-figure-group';
+      figure.replaceWith(group);
+      group.append(figure, nav);
+
+      const render = () => {
+        track.style.transform = 'translateX(' + (-index * 100) + '%)';
+        dots.forEach((dot, i) => {
+          const on = i === index;
+          dot.classList.toggle('is-active', on);
+          dot.setAttribute('aria-current', on ? 'true' : 'false');
+        });
+      };
+      const advance = () => { index = (index + 1) % count; render(); };
+      const nextTick = () => interval - (((Date.now() - offset) % interval) + interval) % interval;
+      const tick = () => { advance(); timer = setTimeout(tick, nextTick()); };
+      const start = () => { if (!timer && !reduced.matches) timer = setTimeout(tick, nextTick()); };
+      const stop = () => { clearTimeout(timer); timer = null; };
+
+      group.addEventListener('mouseenter', stop);
+      group.addEventListener('mouseleave', start);
+      reduced.addEventListener('change', () => { stop(); start(); });
+      render();
+      start();
+    });
+
+    document.querySelectorAll('.c-figure__video').forEach(wrap => {
+      const iframe = wrap.querySelector('iframe[src*="vimeo.com"]');
+      if (!iframe) return;
+      const id = (iframe.src.match(/video\/(\d+)/) || [])[1];
+      if (!id) return;
+      fetch('https://vimeo.com/api/oembed.json?url=' + encodeURIComponent('https://vimeo.com/' + id))
+        .then(r => r.json())
+        .then(d => {
+          if (d.width && d.height) wrap.style.setProperty('--video-aspect', d.width + ' / ' + d.height);
+        })
+        .catch(() => {});
+    });
+  </script>
+
+</body>
+</html>

@@ -443,10 +443,7 @@
    FOOTER CTA — deep teal slab
    ============================================================ */
 .c-footer-cta {
-  background:
-    radial-gradient(circle at 18% 12%, rgba(168, 172, 178, 0.45) 0%, transparent 45%),
-    radial-gradient(circle at 82% 88%, rgba(92, 96, 105, 0.55) 0%, transparent 50%),
-    linear-gradient(180deg, var(--accent-soft) 0%, var(--accent) 100%);
+  background: var(--accent);
   color: #E8EAEE;
   border-radius: var(--r-lg) var(--r-lg) 0 0;
   position: relative;
